@@ -1,0 +1,56 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+<script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
+<script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8">
+</head>
+<body style="margin: 0px; overflow:hidden;">
+	<a-scene
+		vr-mode-ui="enabled: false;"
+		loading-screen="enabled: false;"
+		renderer="logarithmicDepthBuffer: true;"
+		arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+		id="scene"
+		embedded
+		gesture-detector
+	>
+		<a-assets>
+			<a-asset-item
+				id="fish-animated"
+				src="https://khweb.ndhu.edu.tw/webxr-public/fish/model/graphic/fish.gltf"
+				timeout="10000"
+			>
+			</a-asset-item>
+			
+		</a-assets>
+		<a-marker
+			id="fish-marker"
+			type="pattern"
+			preset="custom"
+			url="https://khweb.ndhu.edu.tw/webxr-public/fish/model/actuator/pattern-fish.patt"
+			raycaster="objects: .clickable"
+			emitevents="true"
+			cursor="fuse: false; rayOrigin: mouse;"
+			id="markerA"
+		>
+			<a-entity
+				id="fish-model"
+				scale="0.2 0.2 0.2"
+				animation-mixer="loop: repeat"
+				gltf-model="#fish-animated"
+				class="clickable"
+				soundhandler
+				gesture-handler
+			>
+			</a-entity>
+		</a-marker>
+		
+		<a-entity camera></a-entity>
+	</a-scene>
+	
+</body>
+</html>
