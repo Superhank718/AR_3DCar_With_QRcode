@@ -1,0 +1,143 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v1.7.33",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Retopo_fish.001",
+      "rotation": [
+        0,
+        -1,
+        0,
+        1.9470718370939721e-7
+      ],
+      "scale": [
+        0.5611425042152405,
+        0.5611425042152405,
+        0.5611425042152405
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Red",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.18897637724876404,
+        "roughnessFactor": 0.25984251499176025
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "mesh.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "午仔魚s-edited",
+      "uri": "fish_img0.jpg"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 5217,
+      "max": [
+        0.4193544089794159,
+        0.8275692462921143,
+        3.9976449012756348
+      ],
+      "min": [
+        -0.4193544089794159,
+        -0.9598551988601685,
+        -4.021864414215088
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 5217,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 5217,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 28272,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 62604,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 62604,
+      "byteOffset": 62604
+    },
+    {
+      "buffer": 0,
+      "byteLength": 41736,
+      "byteOffset": 125208
+    },
+    {
+      "buffer": 0,
+      "byteLength": 56544,
+      "byteOffset": 166944
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "fish_data.bin",
+      "byteLength": 223488
+    }
+  ]
+}
